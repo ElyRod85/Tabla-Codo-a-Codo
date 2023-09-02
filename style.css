@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    transition: 300ms;
+}
+
+a:hover {
+    text-decoration: none;
+    transition: 300ms;
+}
+
+p {
+    color: rgb(63, 63, 63);
+}
+
+main {
+    width: 90%;
+    margin: 30px auto 30px auto;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+
+
+/* Table */
+
+#main-table table {
+    border-radius: 5px;
+}
+
+#main-table table thead tr th a {
+    color: rgb(109, 180, 255);
+}
+
+#main-table table thead tr th a:hover {
+    color: rgb(0, 123, 255);
+}
+
+#main-table table thead tr th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#main-table table tbody tr th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#main-table table tbody tr td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#main-table table tbody tr td img.planet-symbol {
+    max-height: 30px;
+    max-width: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#main-table table tbody tr td img.planet-photo {
+    max-height: 80px;
+    max-width: 80px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+@media (max-width: 1024px) {
+    #main-table table {
+        height: 85vh;
+    }
+}
+
+
+
+/* Tooltips */
+
+.tooltip-inner {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    font-size: 15px;
+    padding: 15px 20px;
+    max-width: 400px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    .tooltip-inner {
+        display: none;
+    }
+    .arrow::before,
+    .bs-tooltip-bottom .arrow::before {
+        display: none;
+    }
+}
+
+
+
+/* Footer */
+
+footer {
+    background: rgb(30, 30, 30);
+    padding: 0;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 100px auto 0 auto;
+}
+
+footer .footer-name p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}

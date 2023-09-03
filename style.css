@@ -92,12 +92,19 @@ main {
 .tooltip-inner {
     font-family: 'Roboto', sans-serif;
     line-height: 1.7;
-    font-size: 15px;
+    font-size: 16px;
     padding: 15px 20px;
     max-width: 400px;
     text-align: left;
     border-radius: 10px;
+    background-color: rgba(255, 255, 255);
+    color: rgb(63, 63, 63);
+    border: 3px solid rgb(45, 45, 45);
 }
+
+.tooltip.show {
+    opacity: 1;
+} 
 
 @media (max-width: 1024px) {
     .tooltip-inner {
